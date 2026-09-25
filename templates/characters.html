@@ -7,10 +7,40 @@
     <link rel="stylesheet" href="/static/css/style.css">
 </head>
 <body>
-<h1>Index</h1>
+<h1>characters</h1>
 <ul>
     <li><a href="/">index</a></li>
     <li><a href="/characters">characters</a></li>
 </ul>
+
+<table>
+    <thead>
+    <tr>
+        <th>Name</th>
+        <th>Path</th>
+        <th>Combat type</th>
+        <th>Version realsed</th>
+    </tr>
+    </thead>
+
+
+
+    {% for character in character_list %}
+    <tr>
+        <!--<th>{{ character[0] }}</th>-->
+        <th>{{ character[1] }}</th>
+         <th>{{ character[2] }}</th>
+         <th>{{ character[3] }}</th>
+         <th>{{ character[4] }}</th>
+         <th>{{ character[5] }}</th>
+         <th>{{ character[6] }}</th>
+         <th>{{ character[7] }}</th>
+         <th>{{ character[8] }}</th>
+         <th>{{ character[9] }}</th>
+         <th>{{ character[10] }}</th>
+
+    </tr>
+    {% endfor %}
+</table>
 </body>
 </html>
