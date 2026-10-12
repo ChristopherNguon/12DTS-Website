@@ -1,0 +1,43 @@
+@import url('https://googleapis.com');
+
+
+body{
+
+
+
+    font-family: 'JetBrains Mono', monospace;
+}
+
+
+table{
+    color: aqua;
+}
+
+.parallax-section{
+      height: 100vh; /* Takes up full screen height */
+
+  /* Background properties */
+  background-image: url('https://upload-os-bbs.hoyolab.com/upload/2023/06/04/36639475/8191ed467f9a247152f935d8abc9af41_2643902427621250924.gif');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  /* CRITICAL PROPERTY: This locks the image to the viewport */
+  background-attachment: fixed;
+
+  /* Centering the text inside the div */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: sans-serif;
+  font-size: 2rem;
+}
+
+.content{
+  height: 50vh;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;}
