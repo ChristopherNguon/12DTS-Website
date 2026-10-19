@@ -17,7 +17,7 @@ def create_connection(db_file):
 def render_home():
     return render_template("index.html")
 
-@app.route("/characters")
+@app.route('/characters')
 def render_characters():
     query = "SELECT Character, Path, Element, Version_released, Home_Planet, First_met, HP, ATK, DEF, SPD FROM Character"
     con = create_connection(DATABASE)
