@@ -4,24 +4,24 @@
 <head>
     <meta charset="UTF-8">
     <title>Index</title>
-    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="/static/css/style.css"> <!-- link to style sheet -->
 </head>
 <body>
-<div class="parallax-section">
-<div class="content">
-<h1>Characters</h1>
+<div class="parallax-section">  <!-- adds parallax background effect -->
+<div class="content"> <!-- main content-->
+<h1>Characters</h1> <!-- heading -->
 <ul>
-    <li><a href="/">Home</a></li>
+    <li><a href="/">Home</a></li>  <!-- search -->
     <li><a href="/characters">Characters</a></li>
     <form method="POST" action="/search">
-        <input type="text" name="search" id="search">
-        <input type="submit" value="search">
+        <input type="text" name="search" id="search">  <!--where to put text-->
+        <input type="submit" value="search">  <!-- submit button -->
     </form>
 </ul>
 
 <table>
     <thead>
-    <tr>
+    <tr> <!-- data -->
         <th>Name</th>
         <th>Path</th>
         <th>Element</th>
@@ -36,16 +36,16 @@
     </thead>
     {% for character in characters %}
     <tr>
-        <th>{{ character[0] }}</th>
-        <th>{{ character[1] }}</th>
-         <th>{{ character[2] }}</th>
-         <th>{{ character[3] }}</th>
-         <th>{{ character[4] }}</th>
-         <th>{{ character[5] }}</th>
-         <th>{{ character[6] }}</th>
-         <th>{{ character[7] }}</th>
-         <th>{{ character[8] }}</th>
-         <th>{{ character[9] }}</th>
+        <th>{{ character[0] }}</th>  <!-- character name -->
+        <th>{{ character[1] }}</th> <!-- path -->
+         <th>{{ character[2] }}</th> <!-- element -->
+         <th>{{ character[3] }}</th> <!-- version -->
+         <th>{{ character[4] }}</th> <!-- home planet-->
+         <th>{{ character[5] }}</th> <!-- first met -->
+         <th>{{ character[6] }}</th> <!-- hp -->
+         <th>{{ character[7] }}</th> <!-- atk -->
+         <th>{{ character[8] }}</th> <!-- def -->
+         <th>{{ character[9] }}</th> <!-- spd -->
          <th>{{ character[10] }}</th>
 
     </tr>

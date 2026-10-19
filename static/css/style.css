@@ -1,4 +1,4 @@
-@import url('https://googleapis.com');
+@import url('https://googleapis.com'); /* adds font from google */
 
 
 body{
@@ -6,11 +6,11 @@ body{
 
 
 
-    font-family: 'JetBrains Mono', monospace;
+    font-family: 'JetBrains Mono', monospace; /* applies font  */
 }
 
 
-table{
+table{ /* Changes table text colour to aqua */
     color: aqua;
 }
 
@@ -26,7 +26,7 @@ table{
   background-size: cover;
 }
 
-.content {
+.content { /* makes the background transparent */
   background: rgba(0, 0, 0, 0);
   display: grid;
   justify-content: center;
@@ -34,15 +34,15 @@ table{
 
 }
 
-h1 {
+h1 { /* changes heading 1 colour to aqua */
   color: aqua;
 }
-a {
+a {/* sets colour for all links to auqa */
   color: aqua;
 
 }
 
-li {
+li {/* sets all list items to aqua */
   color: aqua;
 
 }
