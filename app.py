@@ -3,7 +3,7 @@ from sqlite3 import Error
 from flask import Flask, render_template, request
 
 app = Flask(__name__)
-DATABASE = "identifier.sqlite"
+DATABASE = "hsr.db"
 
 def create_connection(db_file):
     try:
